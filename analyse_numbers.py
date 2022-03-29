@@ -1,7 +1,6 @@
 def is_natural_number(number):
-    my_numbers = [0, 2, 8, 7.4]
     is_natural = []
-    for i in range(len(my_numbers)):
+    for i in range(len(number)):
         if i % 1 == 0 and i > 0:
             is_natural.append(True)
         else:
