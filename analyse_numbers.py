@@ -4,9 +4,19 @@ def is_natural_number(number):
     else:
         return False
 
+def is_even_number(number):
+    if number % 2 == 0:
+        return True
+    else:
+        return False
+
+
+
+
 def main():
     my_number = 5
     print(is_natural_number(my_number))
+    print(is_even_number(my_number))
 
 if __name__ == "__main__":
     main()
