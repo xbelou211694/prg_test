@@ -8,20 +8,21 @@ def is_natural_number(number):
 
     return is_natural
 
+
 def is_even_number(number):
-    if number % 2 == 0:
-        return True
-    else:
-        return False
-
-
+    is_even = []
+    for i in range(len(number)):
+        if i % 2 == 0:
+            is_even.append(True)
+        else:
+            is_even.append(False)
+    return is_even
 
 
 def main():
-    my_number = 5
     my_numbers = [0, 2, 8, 7.4]
     print(is_natural_number(my_numbers))
-    print(is_even_number(my_number))
+    print(is_even_number(my_numbers))
 
 if __name__ == "__main__":
     main()
